@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.proyectovectorial.DerivadasController"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <padding>
+        <Insets top="40" right="20" bottom="20" left="20" />
+    </padding>
+
+    <VBox spacing="20">
+        <Label text="Escribir la función para calcular la Matriz Jacobiana" />
+
+        <HBox spacing="5" alignment="TOP_LEFT">
+            <Label text="f(x,y,z)= "/>
+            <Label text="(" styleClass="simbolos"/>
+            <TextField fx:id="funcionx" prefWidth="80" prefHeight="20"/>
+            <Label text="," styleClass="simbolos"/>
+            <TextField fx:id="funciony" prefWidth="80" prefHeight="20"/>
+            <Label text="," styleClass="simbolos"/>
+            <TextField fx:id="funcionz" prefWidth="80" prefHeight="20"/>
+            <Label text=")" styleClass="simbolos"/>
+        </HBox>
+        <Button text="Matriz Jacobiana"  GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="btnJacobiana" onAction="#Derivada" />
+        <Label text="" fx:id="matrizJacobianaLabel"/>
+    </VBox>
+
+</VBox>

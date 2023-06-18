@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.proyectovectorial.BasicasController"
+      prefHeight="350.0" prefWidth="300.0" spacing="10">
+
+    <padding>
+        <Insets top="40" right="20" bottom="20" left="20" />
+    </padding>
+
+    <HBox spacing="5">
+        <Label text="Vector A" />
+        <Label text="(" styleClass="simbolos" />
+        <TextField fx:id="vector1x" prefWidth="80" prefHeight="20" />
+        <Label text="," styleClass="simbolos" />
+        <TextField fx:id="vector1y" prefWidth="80" prefHeight="20" />
+        <Label text="," styleClass="simbolos" />
+        <TextField fx:id="vector1z" prefWidth="80" prefHeight="20" />
+        <Label text=")" styleClass="simbolos" />
+    </HBox>
+
+    <HBox spacing="5">
+        <Label text="Vector B" />
+        <Label text="(" styleClass="simbolos" />
+        <TextField fx:id="vector2x" prefWidth="80" prefHeight="20" />
+        <Label text="," styleClass="simbolos" />
+        <TextField fx:id="vector2y" prefWidth="80" prefHeight="20" />
+        <Label text="," styleClass="simbolos" />
+        <TextField fx:id="vector2z" prefWidth="80" prefHeight="20" />
+        <Label text=")" styleClass="simbolos" />
+    </HBox>
+    <HBox spacing="5">
+        <Label text="Vector C" />
+        <Label text="(" styleClass="simbolos" />
+        <TextField fx:id="vector3x" prefWidth="80" prefHeight="20" />
+        <Label text="," styleClass="simbolos" />
+        <TextField fx:id="vector3y" prefWidth="80" prefHeight="20" />
+        <Label text="," styleClass="simbolos" />
+        <TextField fx:id="vector3z" prefWidth="80" prefHeight="20" />
+        <Label text=")" styleClass="simbolos" />
+    </HBox>
+
+    <Label fx:id="vectorResultado" styleClass="texto"/>
+
+    <HBox spacing="10">
+        <Button text="Producto Cruz AB" onAction="#ProductoCruz" />
+        <Button text="Producto Punto AB" onAction="#ProductoPunto" />
+        <Button text="Triple Producto Escalar A*(BXC)" onAction="#ProductoTripleEscalar" />
+    </HBox>
+
+    <stylesheets>
+        <URL value="@css/styles.css"></URL>
+    </stylesheets>
+</VBox>
