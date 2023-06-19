@@ -8,6 +8,7 @@
 
 <?import javafx.geometry.Insets?>
 
+<?import java.net.URL?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.proyectovectorial.DerivadasController"
@@ -31,7 +32,26 @@
             <Label text=")" styleClass="simbolos"/>
         </HBox>
         <Button text="Matriz Jacobiana"  GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="btnJacobiana" onAction="#Derivada" />
-        <Label text="" fx:id="matrizJacobianaLabel"/>
+
+        <HBox spacing="5" alignment="TOP_LEFT">
+            <Label text="" fx:id="texto1" style="-fx-font-size: 35px;" />
+            <GridPane styleClass="gridPane">
+                <Label text="" fx:id="matriz0x0" GridPane.columnIndex="0" GridPane.rowIndex="0" minWidth="80" styleClass="matriz"/>
+                <Label text="" fx:id="matriz0x1" GridPane.columnIndex="1" GridPane.rowIndex="0" minWidth="80" styleClass="matriz"/>
+                <Label text="" fx:id="matriz0x2" GridPane.columnIndex="2" GridPane.rowIndex="0" minWidth="30" styleClass="matriz"/>
+                <Label text="" fx:id="matriz1x0" GridPane.columnIndex="0" GridPane.rowIndex="1" minWidth="80" styleClass="matriz"/>
+                <Label text="" fx:id="matriz1x1" GridPane.columnIndex="1" GridPane.rowIndex="1" minWidth="80" styleClass="matriz"/>
+                <Label text="" fx:id="matriz1x2" GridPane.columnIndex="2" GridPane.rowIndex="1" minWidth="30" styleClass="matriz"/>
+                <Label text="" fx:id="matriz2x0" GridPane.columnIndex="0" GridPane.rowIndex="2" minWidth="80" styleClass="matriz"/>
+                <Label text="" fx:id="matriz2x1" GridPane.columnIndex="1" GridPane.rowIndex="2" minWidth="80" styleClass="matriz"/>
+                <Label text="" fx:id="matriz2x2" GridPane.columnIndex="2" GridPane.rowIndex="2" minWidth="30" styleClass="matriz"/>
+            </GridPane>
+            <Label text="" fx:id="texto2" style="-fx-font-size: 35px;"/>
+        </HBox>
     </VBox>
+
+    <stylesheets>
+        <URL value="@css/styles.css"></URL>
+    </stylesheets>
 
 </VBox>

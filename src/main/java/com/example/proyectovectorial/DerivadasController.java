@@ -3,8 +3,6 @@ package com.example.proyectovectorial;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
-import javafx.scene.text.TextFlow;
 import org.lsmp.djep.djep.DJep;
 import org.nfunk.jep.Node;
 import org.nfunk.jep.ParseException;
@@ -16,27 +14,63 @@ public class DerivadasController {
     private TextField funciony;
     @FXML
     private TextField funcionz;
+
     @FXML
-    private Label matrizJacobianaLabel;
-    public void Derivada(){
-        String fx= funcionx.getText();
-        String fy=funciony.getText();
-        String fz=funcionz.getText();
+    private Label matriz0x0;
 
-        String[][] matrizJacobiana=CalcularDerivadasParciales(fx,fy,fz);
+    @FXML
+    private Label matriz0x1;
 
-        StringBuilder sb = new StringBuilder();
+    @FXML
+    private Label matriz0x2;
+
+    @FXML
+    private Label matriz1x0;
+
+    @FXML
+    private Label matriz1x1;
+
+    @FXML
+    private Label matriz1x2;
+
+    @FXML
+    private Label matriz2x0;
+
+    @FXML
+    private Label matriz2x1;
+
+    @FXML
+    private Label matriz2x2;
+
+    @FXML
+    private Label texto1;
+
+    @FXML
+    private Label texto2;
+
+
+    public void Derivada() {
+        String fx = funcionx.getText();
+        String fy = funciony.getText();
+        String fz = funcionz.getText();
+
+        String[][] matrizJacobiana = CalcularDerivadasParciales(fx, fy, fz);
+
+        Label[][] labels = {
+                {matriz0x0, matriz0x1, matriz0x2},
+                {matriz1x0, matriz1x1, matriz1x2},
+                {matriz2x0, matriz2x1, matriz2x2}
+        };
+        texto1.setText("T = (");
         for (int i = 0; i < matrizJacobiana.length; i++) {
             for (int j = 0; j < matrizJacobiana[i].length; j++) {
-                sb.append(matrizJacobiana[i][j]).append("\t\t\t");
+                labels[i][j].setText(matrizJacobiana[i][j]);
             }
-            sb.append("\n");
         }
-
-        // Establecer la cadena de texto en el Label
-        matrizJacobianaLabel.setText(sb.toString());
+        texto2.setText(")");
 
     }
+
     public String[][] CalcularDerivadasParciales(String fx,String fy,String fz) {
         DJep djep = new DJep();
         Node nodoFx,nodoFy,nodoFz;
@@ -102,9 +136,6 @@ public class DerivadasController {
 
         return derivadasParciales;
     }
-
-
-
 
 
 }

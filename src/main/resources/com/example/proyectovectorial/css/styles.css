@@ -6,3 +6,15 @@
     -fx-font-size: 20px;
 
 }
+.matriz {
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-min-width: 80px;
+    -fx-alignment: center;
+    -fx-font-size: 14px;
+}
+
+.grid-pane .label {
+    -fx-margin: 20px;
+}

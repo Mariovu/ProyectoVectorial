@@ -22,8 +22,8 @@
         <RowConstraints />
     </rowConstraints>
 
-    <Button text="Operaciones Basicas"  GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="btnBasicas" onAction="#abrirVentanaBasicas"/>
-    <Button text="Derivadas" GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="btnDerivadas" onAction="#abrirVentanaDerivadas"/>
-    <Button text="Integrales" GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="btnIntegrales"/>
-    <Button text="4" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="button4"/>
+    <Button text="Operaciones Vectoriales"  GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="btnBasicas" onAction="#abrirVentanaBasicas"/>
+    <Button text="Matriz Jacobiana" GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="btnDerivadas" onAction="#abrirVentanaDerivadas"/>
+    <Button text="Ec Plano Tangente" GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="btnIntegrales"/>
+    <Button text="Integrales" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="button4"/>
 </GridPane>
