@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.proyectovectorial.EcPlanoController"
-            prefHeight="400.0" prefWidth="600.0">
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.proyectovectorial.EcPlanoController"
+      prefHeight="350.0" prefWidth="300.0" spacing="10" styleClass="background">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
 
-</AnchorPane>
+    <Label text="Escribir una la ec de una superficie f(x,y) para calcular su ec del plano tangente" styleClass="subtitulos"/>
+    <HBox>
+        <Label text="z=" styleClass="subtitulos"/>
+        <TextField fx:id="txtfuncion" />
+    </HBox>
+
+    <HBox>
+        <Label text="En el Punto (" styleClass="subtitulos"/>
+        <TextField fx:id="Px" style="-fx-pref-width: 60;" />
+        <Label text=", " styleClass="subtitulos"/>
+        <TextField fx:id="Py" style="-fx-pref-width: 60;" />
+        <Label text=", " styleClass="subtitulos"/>
+        <TextField fx:id="Pz" style="-fx-pref-width: 60;" />
+        <Label text=")" styleClass="subtitulos"/>
+    </HBox>
+    <Label text="" fx:id="txtResultado"/>
+    <Button text="Calcular Ec Tangente" fx:id="btnBasicas" onAction="#EcTangente" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
+    <stylesheets>
+        <URL value="@css/styles.css"></URL>
+    </stylesheets>
+</VBox>

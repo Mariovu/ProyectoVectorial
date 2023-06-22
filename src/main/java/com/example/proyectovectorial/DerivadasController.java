@@ -10,8 +10,10 @@ import org.nfunk.jep.ParseException;
 public class DerivadasController {
     @FXML
     private TextField funcionx;
+
     @FXML
     private TextField funciony;
+
     @FXML
     private TextField funcionz;
 

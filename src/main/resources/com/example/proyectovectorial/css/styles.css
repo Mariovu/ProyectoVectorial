@@ -18,3 +18,20 @@
 .grid-pane .label {
     -fx-margin: 20px;
 }
+
+.subtitulos{
+-fx-font-size:15px;
+}
+
+.background{
+ -fx-background-color: linear-gradient(to bottom, #6f1a37, #b87283);
+}
+.botones {
+    -fx-background-color: #444444;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5px; /* Radio de los bordes */
+    -fx-border-radius: 5px; /* Radio de los bordes */
+}

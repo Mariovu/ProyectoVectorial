@@ -12,7 +12,7 @@
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.proyectovectorial.DerivadasController"
-      prefHeight="400.0" prefWidth="600.0">
+      prefHeight="400.0" prefWidth="600.0" styleClass="background">
 
     <padding>
         <Insets top="40" right="20" bottom="20" left="20" />

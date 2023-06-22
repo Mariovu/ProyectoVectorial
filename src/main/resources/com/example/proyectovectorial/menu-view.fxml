@@ -6,8 +6,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 
 
+<?import java.net.URL?>
 <GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml"
-          fx:controller="com.example.proyectovectorial.MenuController"  >
+          fx:controller="com.example.proyectovectorial.MenuController" styleClass="background"  >
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
@@ -22,8 +23,12 @@
         <RowConstraints />
     </rowConstraints>
 
-    <Button text="Operaciones Vectoriales"  GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="btnBasicas" onAction="#abrirVentanaBasicas"/>
-    <Button text="Matriz Jacobiana" GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="btnDerivadas" onAction="#abrirVentanaDerivadas"/>
-    <Button text="Ec Plano Tangente" GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="btnIntegrales"/>
-    <Button text="Integrales" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="button4"/>
+    <Button text="Operaciones Vectoriales"  GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="btnBasicas" onAction="#abrirVentanaBasicas" styleClass="botones"/>
+    <Button text="Matriz Jacobiana" GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="btnDerivadas" onAction="#abrirVentanaDerivadas" styleClass="botones"/>
+    <Button text="Ec Plano Tangente" GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="btnIntegrales" onAction="#abrirVentanaEcTangente" styleClass="botones"/>
+    <Button text="Integrales" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="button4" styleClass="botones"/>
+
+    <stylesheets>
+        <URL value="@css/styles.css"></URL>
+    </stylesheets>
 </GridPane>

@@ -58,4 +58,17 @@ public class MenuController {
         }
     }
 
+    @FXML
+    private void abrirVentanaEcTangente() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("ecplano-view.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root,600,600));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
