@@ -3,9 +3,8 @@ module com.example.proyectovectorial {
     requires javafx.fxml;
 
     requires org.kordamp.bootstrapfx.core;
-    requires jep;
     requires djep;
-
+    requires jep;
     opens com.example.proyectovectorial to javafx.fxml;
     exports com.example.proyectovectorial;
 }
