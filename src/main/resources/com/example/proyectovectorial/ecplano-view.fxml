@@ -15,23 +15,23 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label text="Escribir una la ec de una superficie f(x,y) para calcular su ec del plano tangente" styleClass="subtitulos"/>
+    <Label text="Escribir una la ec de una superficie f(x,y) para calcular su ec del plano tangente" styleClass="texto"/>
     <HBox>
-        <Label text="z=" styleClass="subtitulos"/>
+        <Label text="z=" styleClass="texto"/>
         <TextField fx:id="txtfuncion" />
     </HBox>
 
     <HBox>
-        <Label text="En el Punto (" styleClass="subtitulos"/>
+        <Label text="En el Punto (" styleClass="texto"/>
         <TextField fx:id="Px" style="-fx-pref-width: 60;" />
-        <Label text=", " styleClass="subtitulos"/>
+        <Label text=", " styleClass="texto"/>
         <TextField fx:id="Py" style="-fx-pref-width: 60;" />
-        <Label text=", " styleClass="subtitulos"/>
+        <Label text=", " styleClass="texto"/>
         <TextField fx:id="Pz" style="-fx-pref-width: 60;" />
-        <Label text=")" styleClass="subtitulos"/>
+        <Label text=")" styleClass="texto"/>
     </HBox>
-    <Label text="" fx:id="txtResultado"/>
-    <Button text="Calcular Ec Tangente" fx:id="btnBasicas" onAction="#EcTangente" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Label text="" fx:id="txtResultado" styleClass="texto"/>
+    <Button text="Calcular Ec Tangente" fx:id="btnBasicas" onAction="#EcTangente" GridPane.columnIndex="0" GridPane.rowIndex="3" styleClass="botones"/>
 
     <stylesheets>
         <URL value="@css/styles.css"></URL>

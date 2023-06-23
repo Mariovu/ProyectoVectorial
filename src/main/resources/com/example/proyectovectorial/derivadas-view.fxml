@@ -19,10 +19,10 @@
     </padding>
 
     <VBox spacing="20">
-        <Label text="Escribir la función para calcular la Matriz Jacobiana" />
+        <Label text="Escribir la función para calcular la Matriz Jacobiana" styleClass="texto" />
 
         <HBox spacing="5" alignment="TOP_LEFT">
-            <Label text="f(x,y,z)= "/>
+            <Label text="f(x,y,z)= " styleClass="texto"/>
             <Label text="(" styleClass="simbolos"/>
             <TextField fx:id="funcionx" prefWidth="80" prefHeight="20"/>
             <Label text="," styleClass="simbolos"/>
@@ -31,10 +31,10 @@
             <TextField fx:id="funcionz" prefWidth="80" prefHeight="20"/>
             <Label text=")" styleClass="simbolos"/>
         </HBox>
-        <Button text="Matriz Jacobiana"  GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="btnJacobiana" onAction="#Derivada" />
+        <Button text="Matriz Jacobiana"  GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="btnJacobiana" onAction="#Derivada" styleClass="botones" />
 
         <HBox spacing="5" alignment="TOP_LEFT">
-            <Label text="" fx:id="texto1" style="-fx-font-size: 35px;" />
+            <Label text="" fx:id="texto1" style="-fx-font-size: 35px;" styleClass="texto"/>
             <GridPane styleClass="gridPane">
                 <Label text="" fx:id="matriz0x0" GridPane.columnIndex="0" GridPane.rowIndex="0" minWidth="80" styleClass="matriz"/>
                 <Label text="" fx:id="matriz0x1" GridPane.columnIndex="1" GridPane.rowIndex="0" minWidth="80" styleClass="matriz"/>

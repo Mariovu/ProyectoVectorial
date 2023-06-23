@@ -1,5 +1,6 @@
 .simbolos {
     -fx-font-size: 20px;
+    -fx-text-fill: #FFFFFF;
 }
 
 .texto {
@@ -13,15 +14,14 @@
     -fx-min-width: 80px;
     -fx-alignment: center;
     -fx-font-size: 14px;
+    -fx-text-fill: #FFFFFF;
 }
 
 .grid-pane .label {
     -fx-margin: 20px;
 }
 
-.subtitulos{
--fx-font-size:15px;
-}
+
 
 .background{
  -fx-background-color: linear-gradient(to bottom, #6f1a37, #b87283);
@@ -34,4 +34,10 @@
     -fx-font-size: 14px;
     -fx-background-radius: 5px; /* Radio de los bordes */
     -fx-border-radius: 5px; /* Radio de los bordes */
+}
+
+.texto
+{
+    -fx-text-fill: #FFFFFF;
+        -fx-font-size: 14px;
 }

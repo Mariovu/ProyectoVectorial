@@ -64,7 +64,7 @@ public class MenuController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("ecplano-view.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
-            stage.setScene(new Scene(root,600,600));
+            stage.setScene(new Scene(root,550,400));
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
